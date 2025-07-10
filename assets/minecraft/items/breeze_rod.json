@@ -1,0 +1,30 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:item_name",
+    "cases": [
+      {
+        "when": {
+            "text": "Levitation Wand",
+            "color": "aqua"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "ctf:item/levitation_wand"
+        }
+      },
+      {
+        "when": "Levitation Wand",
+        "model": {
+          "type": "minecraft:model",
+          "model": "ctf:item/levitation_wand"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/breeze_rod"
+    }
+  }
+}

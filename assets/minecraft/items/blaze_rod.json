@@ -1,0 +1,30 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:item_name",
+    "cases": [
+      {
+        "when": {
+          "text": "Fire Wand",
+          "color": "yellow"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "ctf:item/fire_rod"
+        }
+      },
+      {
+        "when": "Fire Wand",
+        "model": {
+          "type": "minecraft:model",
+          "model": "ctf:item/fire_rod"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/blaze_rod"
+    }
+  }
+}
