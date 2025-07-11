@@ -41,6 +41,44 @@
           },
           "property": "minecraft:using_item"
         }
+      },
+      {
+        "when": {
+          "text": "Flinger"
+        },
+        "model": {
+          "type": "minecraft:condition",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "ctf:item/flinger/flinger"
+          },
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "entries": [
+              {
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "ctf:item/flinger/flinger_pulling_2"
+                },
+                "threshold": 0.65
+              },
+              {
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "ctf:item/flinger/flinger_pulling_3"
+                },
+                "threshold": 0.9
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "ctf:item/flinger/flinger_pulling_1"
+            },
+            "property": "minecraft:use_duration",
+            "scale": 0.05
+          },
+          "property": "minecraft:using_item"
+        }
       }
     ],
     "fallback": {
