@@ -1,0 +1,30 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:item_name",
+    "cases": [
+      {
+        "when": {
+            "text": "Hunter's Eye",
+            "color": "aqua"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "ctf:item/hunters_eye"
+        }
+      },
+      {
+        "when": "Hunter's Eye",
+        "model": {
+          "type": "minecraft:model",
+          "model": "ctf:item/hunters_eye"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/ender_eye"
+    }
+  }
+}
