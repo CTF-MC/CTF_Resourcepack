@@ -1,119 +1,86 @@
 {
   "model": {
-    "type": "minecraft:select",
-    "cases": [
-      {
-        "model": {
-          "type": "minecraft:model",
-          "model": "ctf:item/potion",
-          "tints": [
-            {
-              "type": "minecraft:potion",
-              "default": -13083194
-            }
-          ]
-        },
-        "when": [
-          "gui",
-		      "ground",
-          "fixed"
+    "type": "minecraft:condition",
+    "property": "minecraft:using_item",
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "ctf:item/potion",
+      "tints": [
+          {
+            "type": "minecraft:potion",
+            "default": 19388
+          }
         ]
-      }
-    ],
-    "fallback": {
-      "type": "minecraft:condition",
-      "property": "minecraft:using_item",
-      "on_false": {
+    },
+    "on_true": {
+      "type": "minecraft:range_dispatch",
+      "property": "minecraft:use_duration",
+      "remaining": true,
+      "scale": 1,
+      "entries": [
+        {
+          "model": {
+            "type": "minecraft:model",
+            "model": "ctf:item/potion",
+            "tints": [
+          {
+            "type": "minecraft:potion",
+            "default": 19388
+          }
+        ]
+          },
+          "threshold": 25
+        },
+        {
+          "model": {
+            "type": "minecraft:model",
+            "model": "ctf:item/potion",
+            "tints": [
+          {
+            "type": "minecraft:potion",
+            "default": 19388
+          }
+        ]
+          },
+          "threshold": 15
+        },
+        {
+          "model": {
+            "type": "minecraft:model",
+            "model": "ctf:item/potion",
+            "tints": [
+          {
+            "type": "minecraft:potion",
+            "default": 19388
+          }
+        ]
+          },
+          "threshold": 10
+        },
+        {
+          "model": {
+            "type": "minecraft:model",
+            "model": "ctf:item/potion",
+            "tints": [
+          {
+            "type": "minecraft:potion",
+            "default": 19388
+          }
+        ]
+          },
+          "threshold": 5
+        }
+      ],
+      "fallback": {
         "type": "minecraft:model",
         "model": "ctf:item/potion",
         "tints": [
-            {
-              "type": "minecraft:potion",
-              "default": -13083194
-            }
-          ]
-      },
-      "on_true": {
-        "type": "minecraft:range_dispatch",
-        "property": "minecraft:use_duration",
-        "remaining": true,
-        "scale": 1,
-        "entries": [
           {
-            "model": {
-              "type": "minecraft:model",
-              "model": "ctf:item/potion",
-              "tints": [
-            {
-              "type": "minecraft:potion",
-              "default": -13083194
-            }
-          ]
-            },
-            "threshold": 25
-          },
-          {
-            "model": {
-              "type": "minecraft:model",
-              "model": "ctf:item/potion",
-              "tints": [
-            {
-              "type": "minecraft:potion",
-              "default": -13083194
-            }
-          ]
-            },
-            "threshold": 15
-          },
-          {
-            "model": {
-              "type": "minecraft:model",
-              "model": "ctf:item/potion",
-              "tints": [
-            {
-              "type": "minecraft:potion",
-              "default": -13083194
-            }
-          ]
-            },
-            "threshold": 10
-          },
-          {
-            "model": {
-              "type": "minecraft:model",
-              "model": "ctf:item/potion",
-              "tints": [
-            {
-              "type": "minecraft:potion",
-              "default": -13083194
-            }
-          ]
-            },
-            "threshold": 5
+            "type": "minecraft:potion",
+            "default": 19388
           }
-        ],
-        "fallback": {
-          "type": "minecraft:model",
-          "model": "ctf:item/potion",
-          "tints": [
-            {
-              "type": "minecraft:potion",
-              "default": -13083194
-            }
-          ]
-        }
-      },
-        "on_false": {
-          "type": "minecraft:model",
-          "model": "ctf:item/potion",
-          "tints": [
-            {
-              "type": "minecraft:potion",
-              "default": -13083194
-            }
-          ]
-        }
-    },
-    "property": "minecraft:display_context"
+        ]
+      }
+    }
   }
 }
