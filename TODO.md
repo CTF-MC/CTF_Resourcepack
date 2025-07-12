@@ -1,3 +1,5 @@
+- [ ] Add 2d models
+
 # Classes to Finish
 - [ ] Beast Tamer
     - [x] Shepherd's Rod
