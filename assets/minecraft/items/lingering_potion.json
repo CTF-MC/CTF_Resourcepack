@@ -1,7 +1,7 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "ctf:item/lingering_potion",
+    "model": "ctf:item/potions/lingering_potion",
     "tints": [
       {
         "type": "minecraft:potion",

@@ -4,7 +4,7 @@
     "property": "minecraft:using_item",
     "on_false": {
       "type": "minecraft:model",
-      "model": "ctf:item/potion",
+      "model": "ctf:item/potions/potion",
       "tints": [
           {
             "type": "minecraft:potion",
@@ -21,7 +21,7 @@
         {
           "model": {
             "type": "minecraft:model",
-            "model": "ctf:item/potion",
+            "model": "ctf:item/potions/drinking_potion_1",
             "tints": [
           {
             "type": "minecraft:potion",
@@ -34,7 +34,7 @@
         {
           "model": {
             "type": "minecraft:model",
-            "model": "ctf:item/potion",
+            "model": "ctf:item/potions/drinking_potion_2",
             "tints": [
           {
             "type": "minecraft:potion",
@@ -47,7 +47,7 @@
         {
           "model": {
             "type": "minecraft:model",
-            "model": "ctf:item/potion",
+            "model": "ctf:item/potions/drinking_potion_3",
             "tints": [
           {
             "type": "minecraft:potion",
@@ -60,7 +60,7 @@
         {
           "model": {
             "type": "minecraft:model",
-            "model": "ctf:item/potion",
+            "model": "ctf:item/potions/drinking_potion_4",
             "tints": [
           {
             "type": "minecraft:potion",
@@ -73,7 +73,7 @@
       ],
       "fallback": {
         "type": "minecraft:model",
-        "model": "ctf:item/potion",
+        "model": "ctf:item/potions/drinking_potion_2",
         "tints": [
           {
             "type": "minecraft:potion",

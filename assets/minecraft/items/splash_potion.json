@@ -1,7 +1,7 @@
 {
     "model": {
         "type": "minecraft:model",
-        "model": "ctf:item/splash_potion",
+        "model": "ctf:item/potions/splash_potion",
         "tints": [
             {
                 "type": "minecraft:potion",
