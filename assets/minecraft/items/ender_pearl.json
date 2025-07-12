@@ -1,6 +1,22 @@
 {
     "model": {
-        "type": "minecraft:model",
-        "model": "ctf:item/ender_pearl"
+        "type": "minecraft:select",
+        "property": "minecraft:display_context",
+        "cases": [
+            {
+                "when": [
+                    "gui",
+                    "fixed"
+                ],
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/ender_pearl"
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "ctf:item/ender_pearl"
+        }
     }
 }

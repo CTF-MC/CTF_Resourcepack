@@ -1,86 +1,108 @@
 {
-  "model": {
-    "type": "minecraft:condition",
-    "property": "minecraft:using_item",
-    "on_false": {
-      "type": "minecraft:model",
-      "model": "ctf:item/potions/potion",
-      "tints": [
-          {
-            "type": "minecraft:potion",
-            "default": 19388
-          }
-        ]
-    },
-    "on_true": {
-      "type": "minecraft:range_dispatch",
-      "property": "minecraft:use_duration",
-      "remaining": true,
-      "scale": 1,
-      "entries": [
-        {
-          "model": {
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:display_context",
+        "cases": [
+            {
+                "when": [
+                    "gui",
+                    "fixed"
+                ],
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/potion",
+                    "tints": [
+                    {
+                      "type": "minecraft:potion",
+                      "default": 19388
+                    }
+                  ]
+                }
+            }
+        ],
+        "fallback": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
             "type": "minecraft:model",
-            "model": "ctf:item/potions/drinking_potion_1",
+            "model": "ctf:item/potions/potion",
             "tints": [
-          {
-            "type": "minecraft:potion",
-            "default": 19388
-          }
-        ]
+                {
+                  "type": "minecraft:potion",
+                  "default": 19388
+                }
+              ]
           },
-          "threshold": 25
-        },
-        {
-          "model": {
-            "type": "minecraft:model",
-            "model": "ctf:item/potions/drinking_potion_2",
-            "tints": [
-          {
-            "type": "minecraft:potion",
-            "default": 19388
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "property": "minecraft:use_duration",
+            "remaining": true,
+            "scale": 1,
+            "entries": [
+              {
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "ctf:item/potions/drinking_potion_1",
+                  "tints": [
+                {
+                  "type": "minecraft:potion",
+                  "default": 19388
+                }
+              ]
+                },
+                "threshold": 25
+              },
+              {
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "ctf:item/potions/drinking_potion_2",
+                  "tints": [
+                {
+                  "type": "minecraft:potion",
+                  "default": 19388
+                }
+              ]
+                },
+                "threshold": 15
+              },
+              {
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "ctf:item/potions/drinking_potion_3",
+                  "tints": [
+                {
+                  "type": "minecraft:potion",
+                  "default": 19388
+                }
+              ]
+                },
+                "threshold": 10
+              },
+              {
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "ctf:item/potions/drinking_potion_4",
+                  "tints": [
+                {
+                  "type": "minecraft:potion",
+                  "default": 19388
+                }
+              ]
+                },
+                "threshold": 5
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "ctf:item/potions/drinking_potion_5",
+              "tints": [
+                {
+                  "type": "minecraft:potion",
+                  "default": 19388
+                }
+              ]
+            }
           }
-        ]
-          },
-          "threshold": 15
-        },
-        {
-          "model": {
-            "type": "minecraft:model",
-            "model": "ctf:item/potions/drinking_potion_3",
-            "tints": [
-          {
-            "type": "minecraft:potion",
-            "default": 19388
-          }
-        ]
-          },
-          "threshold": 10
-        },
-        {
-          "model": {
-            "type": "minecraft:model",
-            "model": "ctf:item/potions/drinking_potion_4",
-            "tints": [
-          {
-            "type": "minecraft:potion",
-            "default": 19388
-          }
-        ]
-          },
-          "threshold": 5
         }
-      ],
-      "fallback": {
-        "type": "minecraft:model",
-        "model": "ctf:item/potions/drinking_potion_2",
-        "tints": [
-          {
-            "type": "minecraft:potion",
-            "default": 19388
-          }
-        ]
-      }
     }
-  }
 }
