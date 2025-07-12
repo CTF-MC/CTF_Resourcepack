@@ -6,19 +6,51 @@
     "cases": [
       {
         "when": {
-            "text": "Levitation Wand",
-            "color": "aqua"
+          "text": "Levitation Wand",
+          "color": "aqua"
         },
         "model": {
-          "type": "minecraft:model",
-          "model": "ctf:item/levitation_wand"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+              {
+                  "when": [
+                      "gui",
+                      "fixed"
+                  ],
+                  "model": {
+                      "type": "minecraft:model",
+                      "model": "ctf:item/2d_levitation_wand"
+                  }
+              }
+          ],
+          "fallback": {
+              "type": "minecraft:model",
+              "model": "ctf:item/levitation_wand"
+          }
         }
       },
       {
         "when": "Levitation Wand",
         "model": {
-          "type": "minecraft:model",
-          "model": "ctf:item/levitation_wand"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+              {
+                  "when": [
+                      "gui",
+                      "fixed"
+                  ],
+                  "model": {
+                      "type": "minecraft:model",
+                      "model": "ctf:item/2d_levitation_wand"
+                  }
+              }
+          ],
+          "fallback": {
+              "type": "minecraft:model",
+              "model": "ctf:item/levitation_wand"
+          }
         }
       }
     ],

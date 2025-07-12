@@ -10,15 +10,47 @@
           "color": "yellow"
         },
         "model": {
-          "type": "minecraft:model",
-          "model": "ctf:item/fire_rod"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+              {
+                  "when": [
+                      "gui",
+                      "fixed"
+                  ],
+                  "model": {
+                      "type": "minecraft:model",
+                      "model": "ctf:item/2d_fire_rod"
+                  }
+              }
+          ],
+          "fallback": {
+              "type": "minecraft:model",
+              "model": "ctf:item/fire_rod"
+          }
         }
       },
       {
         "when": "Fire Wand",
         "model": {
-          "type": "minecraft:model",
-          "model": "ctf:item/fire_rod"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+              {
+                  "when": [
+                      "gui",
+                      "fixed"
+                  ],
+                  "model": {
+                      "type": "minecraft:model",
+                      "model": "ctf:item/2d_fire_rod"
+                  }
+              }
+          ],
+          "fallback": {
+              "type": "minecraft:model",
+              "model": "ctf:item/fire_rod"
+          }
         }
       }
     ],
