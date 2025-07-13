@@ -1,0 +1,66 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:display_context",
+    "cases": [
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/bread"
+        },
+        "when": [
+          "gui",
+          "fixed"
+        ]
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:condition",
+      "property": "minecraft:using_item",
+      "on_true": {
+        "type": "minecraft:range_dispatch",
+        "property": "minecraft:use_duration",
+        "remaining": true,
+        "scale": 1,
+        "entries": [
+          {
+            "model": {
+              "type": "minecraft:model",
+              "model": "ctf:item/bread/bread_eatting_1"
+            },
+            "threshold": 25
+          },
+          {
+            "model": {
+              "type": "minecraft:model",
+              "model": "ctf:item/bread/bread_eatting_2"
+            },
+            "threshold": 15
+          },
+          {
+            "model": {
+              "type": "minecraft:model",
+              "model": "ctf:item/bread/bread_eatting_3"
+            },
+            "threshold": 10
+          },
+          {
+            "model": {
+              "type": "minecraft:model",
+              "model": "ctf:item/bread/bread_eatting_4"
+            },
+            "threshold": 5
+          }
+        ],
+        "fallback": {
+          "type": "minecraft:model",
+          "model": "ctf:item/bread/bread_eatting_4"
+        }
+      },
+      "on_false": {
+        "type": "minecraft:model",
+        "model": "ctf:item/bread/bread"
+      }
+    }
+  }
+}

@@ -33,7 +33,6 @@
     - [ ] Diminishment Tome
 
 - [ ] Random
-    - [ ] Bread
     - [ ] Make arrows have 3d effect
 
 # Classes Finished
@@ -46,3 +45,4 @@
 - [x] Random
     - [x] Wind Charge
     - [x] Potions 
+    - [x] Bread
