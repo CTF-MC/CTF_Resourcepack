@@ -6,19 +6,51 @@
     "cases": [
       {
         "when": {
-          "text":"Poison Dagger",
-          "color":"white"
+          "text": "Poison Dagger",
+          "color": "white"
         },
         "model": {
-          "type": "minecraft:model",
-          "model": "ctf:item/poison_dagger"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+              {
+                  "when": [
+                      "gui",
+                      "fixed"
+                  ],
+                  "model": {
+                      "type": "minecraft:model",
+                      "model": "ctf:item/2d_poison_dagger"
+                  }
+              }
+          ],
+          "fallback": {
+              "type": "minecraft:model",
+              "model": "ctf:item/poison_dagger"
+          }
         }
       },
       {
         "when": "Poison Dagger",
         "model": {
-          "type": "minecraft:model",
-          "model": "ctf:item/poison_dagger"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+              {
+                  "when": [
+                      "gui",
+                      "fixed"
+                  ],
+                  "model": {
+                      "type": "minecraft:model",
+                      "model": "ctf:item/2d_poison_dagger"
+                  }
+              }
+          ],
+          "fallback": {
+              "type": "minecraft:model",
+              "model": "ctf:item/poison_dagger"
+          }
         }
       }
     ],
