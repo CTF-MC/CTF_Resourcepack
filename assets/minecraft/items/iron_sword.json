@@ -56,7 +56,13 @@
     ],
     "fallback": {
       "type": "minecraft:model",
-      "model": "minecraft:item/iron_sword"
+      "model": "ctf:item/sword",
+      "tints": [
+        {
+          "type": "minecraft:team",
+          "default": 8258665
+        }
+      ]
     }
   }
 }

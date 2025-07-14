@@ -1,0 +1,117 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:item_name",
+    "cases": [
+      {
+        "when": {
+          "text": "Spear",
+          "color": "aqua"
+        },
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "minecraft:model",
+                "model": "ctf:item/2d_spear"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:condition",
+            "property": "minecraft:using_item",
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "ctf:item/spear_throwing",
+              "tints": [
+                {
+                  "type": "minecraft:team",
+                  "default": 3775743
+                }
+              ]
+            },
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "ctf:item/spear",
+              "tints": [
+                {
+                  "type": "minecraft:team",
+                  "default": 3775743
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "when": "Spear",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "minecraft:model",
+                "model": "ctf:item/2d_spear"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:condition",
+            "property": "minecraft:using_item",
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "ctf:item/spear_throwing",
+              "tints": [
+                {
+                  "type": "minecraft:team",
+                  "default": 3775743
+                }
+              ]
+            },
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "ctf:item/spear",
+              "tints": [
+                {
+                  "type": "minecraft:team",
+                  "default": 3775743
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:select",
+      "property": "minecraft:display_context",
+      "cases": [
+        {
+          "when": "gui",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/trident"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:condition",
+        "property": "minecraft:using_item",
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/trident_throwing"
+        },
+        "on_false": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/trident_in_hand"
+        }
+      }
+    }
+  }
+}
