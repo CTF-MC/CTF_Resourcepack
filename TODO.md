@@ -3,8 +3,8 @@
 # Classes to Finish
 - [ ] Beast Tamer
     - [x] Shepherd's Rod
-    - [ ] Wolf Horn
-    - [ ] Battle Bugle
+    - [ ] Wolf Horn 
+    - [ ] Battle Bugle (ribbon same color as team)
     - [x] Splash Potion of Healing
 - [ ] Guardian
     - [ ] Helmet
