@@ -5,6 +5,30 @@
     "component": "minecraft:item_name",
     "cases": [
       {
+        "when": "XCNR",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": [
+                "thirdperson_righthand",
+                "thirdperson_lefthand",
+                "head"
+              ],
+              "model": {
+                "type": "minecraft:model",
+                "model": "ctf:item/easter_egg/xcnr_sitting"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "ctf:item/easter_egg/xcnr"
+          }
+        }
+      },
+      {
         "when": "Alex",
         "model": {
           "type": "minecraft:select",
@@ -12,21 +36,67 @@
           "cases": [
             {
               "when": [
-                "firstperson_righthand",
-                "firstperson_lefthand",
-                "ground",
-                "fixed",
-                "gui"
+                "thirdperson_righthand",
+                "thirdperson_lefthand",
+                "head"
               ],
               "model": {
                 "type": "minecraft:model",
-                "model": "ctf:item/easter_egg/alex"
+                "model": "ctf:item/easter_egg/alex_sitting"
               }
             }
           ],
           "fallback": {
             "type": "minecraft:model",
-            "model": "ctf:item/easter_egg/alex_sitting"
+            "model": "ctf:item/easter_egg/alex"
+          }
+        }
+      },
+      {
+        "when": "rmbc",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": [
+                "thirdperson_righthand",
+                "thirdperson_lefthand",
+                "head"
+              ],
+              "model": {
+                "type": "minecraft:model",
+                "model": "ctf:item/easter_egg/rmbc_sitting"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "ctf:item/easter_egg/rmbc"
+          }
+        }
+      },
+      {
+        "when": "64jk",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": [
+                "thirdperson_righthand",
+                "thirdperson_lefthand",
+                "head"
+              ],
+              "model": {
+                "type": "minecraft:model",
+                "model": "ctf:item/easter_egg/64jk_sitting"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "ctf:item/easter_egg/64jk"
           }
         }
       }

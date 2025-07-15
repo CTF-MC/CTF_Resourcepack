@@ -13,13 +13,13 @@
               ],
               "model": {
                 "type": "minecraft:model",
-                "model": "ctf:item/easter_egg/alex"
+                "model": "ctf:item/easter_egg/xcnr"
               }
             }
           ],
           "fallback": {
             "type": "minecraft:model",
-            "model": "ctf:item/easter_egg/alex_sitting"
+            "model": "ctf:item/easter_egg/xcnr_sitting"
           }
         }
 }
