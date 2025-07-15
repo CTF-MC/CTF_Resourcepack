@@ -17,12 +17,12 @@
     - [ ] Shadow Step
     - [x] Ender Pearl
 - [ ] Spearthrower
-    - [ ] Spear
+    - [x] Spear (model done)
     - [ ] Gust Stick
     - [x] Turtle Master Potion
     - [x] Leaping Potion
 - [ ] Swordsman
-    - [ ] Sword
+    - [x] Sword
     - [ ] Crossbow
     - [x] Berserker Potion
     - [x] Arrow
