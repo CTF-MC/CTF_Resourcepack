@@ -11,7 +11,7 @@
           "property": "minecraft:using_item",
           "on_true": {
             "type": "minecraft:model",
-            "model": "ctf:item/battle_bugle",
+            "model": "ctf:item/battle_bugle_playing",
             "tints": [
                 {
                     "type": "minecraft:team",
