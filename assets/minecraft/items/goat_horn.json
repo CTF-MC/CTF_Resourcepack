@@ -69,7 +69,7 @@
               "property": "minecraft:using_item",
               "on_true": {
                 "type": "minecraft:model",
-                "model": "ctf:item/wolf_horn"
+                "model": "ctf:item/wolf_horn_playing"
               },
               "on_false": {
                 "type": "minecraft:model",
