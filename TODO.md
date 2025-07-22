@@ -4,7 +4,7 @@
 - [ ] Beast Tamer
     - [x] Shepherd's Rod
     - [ ] Wolf Horn 
-    - [ ] Battle Bugle (ribbon same color as team)
+    - [x] Battle Bugle (ribbon same color as team)
     - [x] Splash Potion of Healing
 - [ ] Guardian
     - [ ] Helmet

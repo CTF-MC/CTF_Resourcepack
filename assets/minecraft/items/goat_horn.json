@@ -7,30 +7,46 @@
       {
         "when": "Battle Bugle",
         "model": {
-          "type": "minecraft:condition",
-          "property": "minecraft:using_item",
-          "on_true": {
-            "type": "minecraft:model",
-            "model": "ctf:item/battle_bugle_playing",
-            "tints": [
-                {
-                    "type": "minecraft:team",
-                    "default": 13436936
-                }
-            ]
-          },
-          "on_false": {
-            "type": "minecraft:model",
-            "model": "ctf:item/battle_bugle",
-            "tints": [
-                {
-                    "type": "minecraft:team",
-                    "default": 13436936
-                }
-            ]
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+              {
+                  "when": [
+                      "gui",
+                      "fixed"
+                  ],
+                  "model": {
+                      "type": "minecraft:model",
+                      "model": "ctf:item/2d_battle_bugle"
+                  }
+              }
+          ],
+          "fallback": {
+              "type": "minecraft:condition",
+              "property": "minecraft:using_item",
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "ctf:item/battle_bugle_playing",
+                "tints": [
+                    {
+                        "type": "minecraft:team",
+                        "default": 13436936
+                    }
+                ]
+              },
+              "on_false": {
+                "type": "minecraft:model",
+                "model": "ctf:item/battle_bugle",
+                "tints": [
+                    {
+                        "type": "minecraft:team",
+                        "default": 13436936
+                    }
+                ]
+              }
+            }
           }
         }
-      }
     ],
     "fallback": {
       "type": "minecraft:condition",
