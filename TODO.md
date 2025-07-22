@@ -1,11 +1,6 @@
 - [ ] Add 2d models
 
 # Classes to Finish
-- [ ] Beast Tamer
-    - [x] Shepherd's Rod
-    - [ ] Wolf Horn 
-    - [x] Battle Bugle (ribbon same color as team)
-    - [x] Splash Potion of Healing
 - [ ] Guardian
     - [ ] Helmet
     - [ ] Shield
@@ -36,6 +31,11 @@
     - [ ] Make arrows have 3d effect
 
 # Classes Finished
+- [x] Beast Tamer
+    - [x] Shepherd's Rod
+    - [x] Wolf Horn 
+    - [x] Battle Bugle (ribbon same color as team)
+    - [x] Splash Potion of Healing
 - [x] Ranger
     - [x] Multibow
     - [x] Flinger
