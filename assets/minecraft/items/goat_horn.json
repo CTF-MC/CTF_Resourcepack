@@ -46,6 +46,37 @@
               }
             }
           }
+        },
+        {
+        "when": "Wolf Horn",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+              {
+                  "when": [
+                      "gui",
+                      "fixed"
+                  ],
+                  "model": {
+                      "type": "minecraft:model",
+                      "model": "minecraft:item/goat_horn"
+                  }
+              }
+          ],
+          "fallback": {
+              "type": "minecraft:condition",
+              "property": "minecraft:using_item",
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "ctf:item/wolf_horn"
+              },
+              "on_false": {
+                "type": "minecraft:model",
+                "model": "ctf:item/wolf_horn"
+              }
+            }
+          }
         }
     ],
     "fallback": {
