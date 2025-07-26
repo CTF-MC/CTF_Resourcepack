@@ -18,7 +18,7 @@
     - [x] Leaping Potion
 - [ ] Swordsman
     - [x] Sword
-    - [ ] Crossbow
+    - [ ] Crossbow (Model added but have to finish UI)
     - [x] Berserker Potion
     - [x] Arrow
 - [ ] Wizard
